@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Chronic Disease Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="home-container">
+        <header class="home-header">
+            <h1>Chronic Disease Prediction System</h1>
+            <p>Utilizing machine learning to provide early insights into chronic health conditions.</p>
+            <div class="cta-buttons">
+                <a href="{{ url_for('login') }}" class="btn btn-primary">Login</a>
+                <a href="{{ url_for('register') }}" class="btn btn-secondary">Sign Up</a>
+            </div>
+        </header>
+
+        <main class="disease-info">
+            <h2>Learn About Common Chronic Diseases</h2>
+            <div class="cards-container">
+                <div class="card">
+                    [Image of a human heart]
+                    <h3>Heart Disease</h3>
+                    <p>Refers to a range of conditions that affect your heart. Early detection through risk factors like blood pressure and cholesterol is key to management.</p>
+                </div>
+                <div class="card">
+                    
+                    <h3>Diabetes</h3>
+                    <p>A disease in which your blood glucose, or blood sugar, levels are too high. Monitoring glucose levels and BMI are crucial for prevention and control.</p>
+                </div>
+                <div class="card">
+                    [Image of cells under a microscope]
+                    <h3>Cancer</h3>
+                    <p>A disease in which some of the body’s cells grow uncontrollably and spread to other parts of the body. Lifestyle factors and biomarkers can indicate risk.</p>
+                </div>
+                <div class="card">
+                    [Image of human joints]
+                    <h3>Hypertension</h3>
+                    <p>Hypertension, also known as high blood pressure, is a chronic medical condition in which the force of blood against the artery walls remains consistently high. Over time, this increased pressure can cause serious health problems such as heart disease, stroke, and kidney damage.
+
+Often called the “silent killer”, hypertension may not show obvious symptoms until significant damage has occurred. That’s why early detection and monitoring are vital.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="home-footer">
+            <p>&copy; 2025 Chronic Disease Prediction System. For informational purposes only.</p>
+        </footer>
+    </div>
+</body>
+</html>
